@@ -1,0 +1,23 @@
+.product_list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    list-style-type: none;
+}
+
+
+.product_list a {
+    border: solid black 1px;
+    border-radius: 2px;
+    width: 25rem;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* vertical-align: middle; */
+
+}
