@@ -27,6 +27,7 @@ import NotFoundPage from "./components/NotFoundPage";
 
 function App_12_1()
 {
+   console.log('*********    App_12_1 ******************************');
 
 // const Products = lazy( () => import('./components/Products')  );
 // const ProductDetails = lazy( () => import('./components/ProductDetails'));
