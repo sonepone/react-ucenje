@@ -60,7 +60,20 @@ const newRoutes = createBrowserRouter(
    )
 );
 
-   const jsx_code2 = <RouterProvider router={newRoutes} />
+   const newRoutesFromArray = createBrowserRouter(
+      [{
+         path: "/",
+         element: <Layout />,
+         children: [
+            { index: true, element: <Welcome /> },
+            { path: "products", element: <Products />, loader: productsLoader },
+            { path: "products/:productId", element: <ProductDetails />, loader: oneProductLoader },
+            { path: "*", element: <NotFoundPage /> }
+         ]
+      }]
+   );
+
+   const jsx_code2 = <RouterProvider router={newRoutesFromArray} />
 
 
    //return jsx_code;
